@@ -7,7 +7,7 @@ Example Code:
         $('.YourSelector').hctimeprogram({
             selstop: function( event, data ) {
                 let hcdata = $(this).hctimeprogram("getarray");
-                let id = <?php echo $shutter->getId();?>;
+                let id = 1;
                 $.ajax({
                     method: "POST",
                     url: "ajax.php",
