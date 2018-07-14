@@ -32,7 +32,7 @@ class hctimeinput
     function __construct($calendarId,$numberOfIntervals=96) {
         $this->_initializeEmptyCalendar();
         // This is only for testing, you should configure the server in a central config file
-        $this->_mysqli = new \mysqli("localhost", "d02b1e65", "uEMGx8srucL2FmZh", "d02b1e65");
+        $this->_mysqli = new \mysqli("localhost", "YourDBUser", "YourPasswod", "YourDatabase");
         // Just die in case of an error
         if ($this->_mysqli->connect_error) {
             die('Connect Error (' . $this->_mysqli->connect_errno . ') '
